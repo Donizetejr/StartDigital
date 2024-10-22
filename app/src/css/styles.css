@@ -1,0 +1,184 @@
+/* comment */
+
+body {
+    font-family: 'Circular', sans-serif;
+}
+
+:root {
+    --cor-principal: #002c41;
+    --cor-secundaria: #00bda3;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-dublado: #738b99;
+    --cor-escuro: #00425e;
+    --cor-escuro-claro: #6f8b9d;
+    --cor-escuro-mais: #1d556b;
+    --cor-light: #f7f7f7;
+    --cor-dark: #f3f3f3;
+    --cor-escuro-gray: #546a74;
+    --cor-detalhe: #baccd9;
+}
+
+.separadores, 
+.fonte-padrao, 
+.titulo-clientes, 
+.titulo-contato,
+.titulo-banner, 
+.titulo-servico, 
+.titulo-planos {
+    color: var(--cor-principal);
+}
+
+.fonte-padrao {
+    font-size: 13px;
+}
+
+.texto-menu, 
+.subtitulo-banner,  
+.subtitulo-depoimentos,
+.texto-banner,
+.texto-servico,
+.texto {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.bkg-nav {
+    background: #f0fffc;
+
+    .navbar-nav {
+    line-height: 0.5; 
+    padding-bottom: 15px;
+    } 
+    
+    .nav-link {
+        line-height: 0.5; /* Ajuste conforme necessário */
+        margin-top: -23px; 
+    }   
+}
+
+.banner {
+    background-image: url('../images/banner.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        position: absolute;
+        top: 25%;
+        right: 45%;
+    }
+}
+
+.titulo-banner {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.subtitulo-banner {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.texto-banner {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.botao-banner,
+.botao-plano,
+.botao-formulario {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    padding: 8px 30px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 500;
+}
+
+.separador-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.separador {
+    border-top: 2px solid #002c41;
+    width: 50px;
+    margin-top: 30px;
+}
+
+.titulo-servico, 
+.titulo-planos {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.texto-servico {
+    color: #738b99;
+}
+
+.planos {
+    background-color: #f0fffc;
+}
+
+.nome-servico, 
+.nome-plano {
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--cor-principal);
+}
+
+.valor-plano {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--cor-escuro-mais);
+}
+
+.descricao-plano, 
+.substitulo-informacoes {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-escuro-claro);
+}
+
+.titulo-depoimentos, 
+.nome-depoimentos {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.texto-depoimentos {
+    color: #516e7a;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.icon-planos {
+    color: var(--cor-secundaria);
+}
+
+.informacoes-contato .titulo-informacoes {
+    color: var(--cor-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.label-informacao {
+    color: var(--cor-detalhe);
+    font-size: 10px;
+}
+
+.formulario-contato .label-formulario,
+.formulario-contato .label-selecionado,
+.formulario-contato .texto-selecionado {
+    font-size: 16px;
+}
+
+.rodape {
+    color: var(--cor-principal);
+    font-size: 12px;
+}
+
+
+            
