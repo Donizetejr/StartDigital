@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../src/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -62,10 +63,10 @@
         <div class="row d-flex justify-content-center py-5">
             <div class="col-md-3 d-flex flex-column align-items-center">
                 <div class="icon mb-2">
-                    <img src="../src/images/Icon1.png" alt="Ícone 1" class="icon" width="85px">
+                    <img src="../src/images/Icon1.png" alt="Ícone 1" class="icon mb-1" width="85px">
                 </div>
-                <h4 class="nome-servico">Gestão de Redes Sociais e</h4>
-                <h4 class="nome-servico">Planejamento de Conteúdo</h4>
+                <h4 class="nome-servico">Gestão de Redes Sociais</h4>
+                <h4 class="nome-servico"> e Criação de Conteúdo</h4>
                 <span class="texto-servico d-block">Planejamos o conteúdo e fazemos o</span>
                 <span class="texto-servico d-block">gerenciamento das suas Redes Sociais</span>
                 <span class="texto-servico d-block">direcionando o público-alvo para a</span>
@@ -95,50 +96,67 @@
     </section>
     <section class="planos">
         <div>
-            <h2 class="text-center py-3">Planos</h2>
-            <p class="text-center">Escolha o plano que melhor se adapta às suas necessidades.</p>
+            <h2 class="titulo-planos text-center py-3">Planos</h2>
+            <p class="subtitulo-planos text-center">Escolha o plano que melhor se adapta às suas necessidades.</p>
         </div>
-
-        <!-- teste -->
-
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center borda-personalizada">
                         <div class="card-body">
-                            <h3 class="card-title">Plano Básico</h3>
-                            <span class="d-block">E-mail suporte</span>
-                            <span class="d-block">10 usuários</span>
-                            <span class="d-block">15 projetos integrados</span>
-                            <span class="d-block">Download ilimitado</span>
-                            <span class="d-block">5 Uploads</span>
-                            <a href="#" class="btn btn-primary my-3">Assinar</a>
+                            <h2 class="nome-plano card-title py-2 separador-planos">Básico</h2>
+                            <div class="my-3">
+                                <span class="rs-planos-light d-flex flex-column mb-3 h5">R$</span>
+                                <span class="valor-plano-light h2">28</span>
+                                <span class="valor-plano-light h5">/mês</span>
+                            </div>
+                            <div class="plano-light">
+                                <span class="d-block">E-mail suporte</span>
+                                <span class="d-block">10 usuários</span>
+                                <span class="d-block">15 projetos integrados</span>
+                                <span class="d-block">Download ilimitado</span>
+                                <span class="d-block mb-4">5 Uploads</span>
+                                <a href="#" class="botao-plano my-3">Assinar</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                        <h3 class="card-title">Plano Padrão</h3>
-                        <span class="d-block">E-mail suporte</span>
-                        <span class="d-block">10 usuários</span>
-                        <span class="d-block">15 projetos integrados</span>
-                        <span class="d-block">Download ilimitado</span>
-                        <span class="d-block">5 Uploads</span>
-                        <a href="#" class="btn btn-primary my-3">Assinar</a>
+                    <div class="card text-center p-5 m-2">
+                        <div class="card-body planos-dark plano-dark">
+                            <h2 class="nome-plano card-title py-2 text-white">Padrão</h2>
+                            <div class="my-3">
+                                <span class="rs-planos-dark d-flex flex-column mb-3 h5">R$</span>
+                                <span class="valor-plano-dark h2">57</span>
+                                <span class="valor-plano-dark h5">/mês</span>
+                            </div>
+                            <span class="d-block"><i class="bi bi-check2 icon-planos"></i> E-mail suporte</span>
+                            <span class="d-block"><i class="bi bi-check2 icon-planos"></i>10 usuários</span>
+                            <span class="d-block"><i class="bi bi-x icon-planos"></i>15 projetos integrados</span>
+                            <span class="d-block"><i class="bi bi-x icon-planos"></i>Download ilimitado</span>
+                            <span class="d-block mb-4"><i class="bi bi-check2 icon-planos"></i>5 Uploads</span>
+                            <a href="#" class="botao-plano my-3">Assinar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center borda-personalizada">
                         <div class="card-body">
-                            <h3 class="card-title">Plano Premium</h3>
-                            <span class="d-block">E-mail suporte</span>
-                            <span class="d-block">10 usuários</span>
-                            <span class="d-block">15 projetos integrados</span>
-                            <span class="d-block">Download ilimitado</span>
-                            <span class="d-block">5 Uploads</span>
-                            <a href="#" class="btn btn-primary my-3">Assinar</a>
+                            <h2 class="nome-plano card-title py-2 separador-planos">Premium</h2>
+                            <div class="my-3">
+                                <span class="rs-planos-light d-flex flex-column mb-3 h5">R$</span>
+                                <span class="valor-plano-light h2">94</span>
+                                <span class="valor-plano-light h5">/mês</span>
+                            </div>
+                            <div class="plano-light">
+                                <span class="d-block">E-mail suporte</span>
+                                <span class="d-block">10 usuários</span>
+                                <span class="d-block">15 projetos integrados</span>
+                                <span class="d-block">Download ilimitado</span>
+                                <span class="d-block mb-4">5 Uploads</span>
+                                <a href="#" class="botao-plano my-3">Assinar</a>
+                            </div>
 
 
                             <!-- <div class="planos-container">
@@ -163,20 +181,22 @@
     <section class="logo-section">
         <div class="separator"></div>
         <div>
-            <h2 class="text-center">Nossos Clientes</h2>
+            <h2 class="text-center py-4">Nossos Clientes</h2>
             <p class="text-center">Veja algumas das marcas que confiam em nossos serviços.</p>
         </div>
-        <div>
-            <img src="../img/logo1.png" alt="Logo 1">
-        </div>
-        <div>
-            <img src="../img/logo2.png" alt="Logo 2">
-        </div>
-        <div>
-            <img src="../img/logo3.png" alt="Logo 3">
-        </div>
-        <div>
-            <img src="../img/logo4.png" alt="Logo 4">
+        <div class="clientes">
+            <div class="mx-5">
+                <img src="../src/images/SingularMotos.png" alt="Logo 1" width="150px">
+            </div>
+            <div class="mx-5">
+                <img src="../src/images/ClaudiaElisa.png" alt="Logo 2" width="180px">
+            </div>
+            <div class="mx-5">
+                <img src="../src/images/CheiasdeCharme.png" alt="Logo 3" width="150px">
+            </div>
+            <div class="mx-5">
+                <img src="../src/images/EsteticaCia.png" alt="Logo 4" width="100px">
+            </div>
         </div>
         </div>
         </div>

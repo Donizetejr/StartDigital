@@ -1,0 +1,26 @@
+**Como incluir um repositório no GIT se ele não existir:
+
+1- Acessar sua conta no github.com e criar um novo repositório;
+2- clonar o repositório no seu computador apertando no botão verde "Code", copiando a url Http e executando no terminal:
+	git clone minhaUrl
+3- inserir os arquivos que voce estava fazendo o projeto na pasta criada do repositário
+4- verificar se os arquivos estão ok
+5- executar no terminal o seguintes comandos:
+	git add .
+	git commit -m "mensagem aleatoria"
+	git push
+ 
+**Alterie novos arquivos, como subir as atualizações no git?
+
+1- git add .
+2- git commit -m "mensagem aleatoria"
+3- git push
+
+**Outra pessoa atualizou arquivos no repositorio, como pegar atualizações?
+
+1- git pull
+
+	obs: se aparecer "commit your changes first" execute os comandos:
+	1.1 - git stash
+	1.2 - git pull 
+	1.3 - git stash pop

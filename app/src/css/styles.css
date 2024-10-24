@@ -35,10 +35,11 @@ body {
 .texto-menu, 
 .subtitulo-banner,  
 .subtitulo-depoimentos,
+.subtitulo-planos,
 .texto-banner,
 .texto-servico,
 .texto {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -85,16 +86,41 @@ body {
     font-weight: 400;
 }
 
+
+a {
+    text-decoration: none !important;
+}
+
+
 .botao-banner,
 .botao-plano,
 .botao-formulario {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto-claro);
     padding: 8px 30px;
-    border-radius: 3px;
-    border: none;
     font-weight: 500;
 }
+
+.botao-banner {
+    border: none !important;
+    border-radius: 4px;
+}
+
+.botao-plano {
+    border-radius: 20px;
+    padding: 8px 65px;
+}
+
+.botao-plano:hover {
+    background-color: #009b8c !important;
+}
+
+.borda-personalizada {
+    border-image: linear-gradient(to top, #80e0d6, #009b8c) 1 !important;
+    padding: 45px; 
+    margin: 17px;    
+}
+
 
 .separador-container {
     text-align: center;
@@ -108,31 +134,88 @@ body {
     margin-top: 30px;
 }
 
-.titulo-servico, 
-.titulo-planos {
+.titulo-servico {
     font-size: 35px;
     font-weight: 500;
 }
 
 .texto-servico {
-    color: #738b99;
+    color: var(--cor-texto-dublado);
 }
 
 .planos {
-    background-color: #f0fffc;
+    background-color: #fbfffe;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
+    box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
+}
+
+.planos-dark {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
+    box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
+}
+
+.separador-planos {
+    border-bottom: 2px solid #dbf8f2;
+}
+
+.subtitulo-planos {
+    color: var(--cor-texto-dublado);
+}
+
+.icon-planos {
+    color: var(--cor-secundaria);
 }
 
 .nome-servico, 
 .nome-plano {
-    font-size: 23px;
+    font-size: 28px;
     font-weight: 500;
     color: var(--cor-principal);
 }
 
-.valor-plano {
+.rs-planos-light {
+    position: absolute;
+    top: 28%;
+    left: 29%;
+    color: var(--cor-escuro-mais);
+}
+
+.rs-planos-dark {
+    position: absolute;
+    top: 28%;
+    left: 29%;
+    color: var(--cor-dark);
+}
+
+.valor-plano-light {
     font-size: 48px;
     font-weight: 400;
     color: var(--cor-escuro-mais);
+}
+
+.valor-plano-dark {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--cor-dark);
+}
+
+.plano-light {
+    color: #6f8b9d;
+
+    a {
+        font-size: 20px;
+    }
+}
+
+.plano-dark {
+    background-color: #06425b;
+    color: #cde0ec;
+
+    a {
+        font-size: 20px;
+    }
 }
 
 .descricao-plano, 
@@ -140,6 +223,11 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: var(--cor-escuro-claro);
+}
+
+.clientes {
+    display: flex;
+    justify-content: center;
 }
 
 .titulo-depoimentos, 
@@ -152,10 +240,6 @@ body {
     color: #516e7a;
     font-size: 18px;
     font-weight: 500;
-}
-
-.icon-planos {
-    color: var(--cor-secundaria);
 }
 
 .informacoes-contato .titulo-informacoes {
