@@ -34,7 +34,6 @@ body {
 
 .texto-menu, 
 .subtitulo-banner,  
-.subtitulo-depoimentos,
 .subtitulo-planos,
 .texto-banner,
 .texto-servico,
@@ -108,7 +107,7 @@ a {
 
 .botao-plano {
     border-radius: 20px;
-    padding: 8px 65px;
+    padding: 11px 63px 14px;
 }
 
 .botao-plano:hover {
@@ -116,9 +115,9 @@ a {
 }
 
 .borda-personalizada {
-    border-image: linear-gradient(to top, #80e0d6, #009b8c) 1 !important;
-    padding: 45px; 
-    margin: 17px;    
+    border-image: linear-gradient(to top, #d9f7f4, #58cec2) 1 !important;
+    padding: 0 45px 45px 45px; 
+    margin: 17px 0;    
 }
 
 
@@ -147,25 +146,40 @@ a {
     background-color: #fbfffe;
     -webkit-box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
     -moz-box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
-    box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
+    box-shadow: 0px 0px 15px 3px rgb(211, 233, 228);
 }
-
-.planos-dark {
+ 
+.shadow-dark {
     -webkit-box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
     -moz-box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
     box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
 }
 
-.separador-planos {
-    border-bottom: 2px solid #dbf8f2;
+.shadow-light {
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(235,240,239,1);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(235,240,239,1);
+    box-shadow: 0px 0px 25px 5px rgba(235,240,239,1)
 }
+
+.separador-planos {
+    border-bottom: 1px solid #dbf8f2;
+}
+
+.separador-dark {
+    border-bottom: 2px solid #dbf8f247;
+}
+
 
 .subtitulo-planos {
     color: var(--cor-texto-dublado);
 }
 
-.icon-planos {
+.icon-check {
     color: var(--cor-secundaria);
+}
+
+.icon-close {
+    color: rgb(194, 36, 36);
 }
 
 .nome-servico, 
@@ -177,15 +191,15 @@ a {
 
 .rs-planos-light {
     position: absolute;
-    top: 28%;
-    left: 29%;
+    top: 21%;
+    left:28%;
     color: var(--cor-escuro-mais);
 }
 
 .rs-planos-dark {
     position: absolute;
-    top: 28%;
-    left: 29%;
+    top: 27%;
+    left: 28%;
     color: var(--cor-dark);
 }
 
@@ -209,14 +223,19 @@ a {
     }
 }
 
-.plano-dark {
-    background-color: #06425b;
+.card.bkg-plano-dark {
+    background-color: #1d556b !important;
     color: #cde0ec;
 
     a {
         font-size: 20px;
     }
 }
+
+.altura-card {
+       margin-top: -8px;
+       height: 98%;
+    }   
 
 .descricao-plano, 
 .substitulo-informacoes {
@@ -230,10 +249,30 @@ a {
     justify-content: center;
 }
 
-.titulo-depoimentos, 
-.nome-depoimentos {
+.bkg-depoimentos {
+    background-color: #002c41;
+    padding-bottom: 110px;
+}
+
+.bkg-card-depoimentos {
+    background-color: #f0fffc !important;
+    margin: 0 7px;
+}
+
+.titulo-depoimentos {
     font-size: 30px;
     font-weight: 400;
+    color: #f3f3f3;
+}
+
+.subtitulo-depoimentos {
+    font-size: 16px;
+    font-weight: 400;
+    color: #babfc2;
+}
+
+.nick-depoimentos {
+    color: var(--cor-principal);
 }
 
 .texto-depoimentos {
