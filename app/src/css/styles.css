@@ -302,25 +302,48 @@ a {
 .descricao-telefone-email {
     color: #8da1aa;
 }
-.informacoes-contato {
-    color: var(--cor-principal);
-    font-size: 16px;
-    font-weight: 400;
+
+.icon-telefone-contato {
+    position: absolute;
+    top: 66%;
+    right: 85%;
 }
 
-.label-informacao {
-    color: var(--cor-detalhe);
-    font-size: 10px;
+.icon-email-contato {
+    position: absolute;
+    top: 80%;
+    right: 85%;
 }
 
-.formulario-contato .label-formulario,
-.formulario-contato .label-selecionado,
-.formulario-contato .texto-selecionado {
+.espaco-letras {
+    letter-spacing: 2px; 
+    font-size: 12px;
+}
+
+
+.bkg-contato {
+    background-image: url(../images/bkg-contato.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bt-contato {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
     font-size: 16px;
+    padding: 14px 50px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+}
+
+.bkg-rodape {
+    color: #fbfbfc;
 }
 
 .rodape {
-    color: var(--cor-principal);
+    color: #6d8088;
     font-size: 12px;
 }
 
