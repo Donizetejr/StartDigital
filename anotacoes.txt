@@ -1,0 +1,4 @@
+
+label: texto acima do input
+placeholder: texto dentro do campo. 
+autofocus: cursor posicionado automaticamente no campo assim que a página for carregada.

@@ -313,12 +313,11 @@
                                 <option value="acima-5000">Acima de R$ 5.000</option>
                             </select>
                         </div>
-                        <button type="submit" class="bt-contato">Enviar Mensagem</button>
+                        <button type="submit" id="formulario" class="bt-contato">Enviar Mensagem</button>
                     </form>
                     <div class="col-md-1"></div>
                 </div>
             </div>
-
             
     </section>
     <footer class="bkg-rodape">
@@ -340,7 +339,7 @@
     crossorigin="anonymous"></script>
 
 <!-- Importação de arquivo JavaScript -->
-<script src="../js/index.js" type="text/javascript"></script>
+<script src="../js/index.js" type="text"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     // Seleciona todos os elementos com a classe "phone"
@@ -378,7 +377,7 @@ document.getElementById("formulario").addEventListener("submit", function(event)
     const email = document.getElementById("email").value;
 
     // Validando o e-mail
-    if (!validarEmail(email)) {
+    if (validarEmail(email)) {
         // Se o e-mail não for válido, impedimos o envio e mostramos um alerta
         alert("Por favor, insira um e-mail válido.");
         event.preventDefault();  // Previne o envio do formulário

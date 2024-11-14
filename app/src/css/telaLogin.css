@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'Circular', sans-serif;
+}
+
+.bkg-container {
+    background: linear-gradient(-48deg, rgba(207,246,237,1) 0%, rgba(133,200,191,1) 100%);
+}
+
+.logo-container {
+    background-color: #e9f9f7 !important;
+   
+}
+
+.card-header {
+    border: none !important;
+}
+
+.card-login {
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.card-login-bg {
+    border-radius: 0 0.25rem 0.25rem 0 !important;
+    border: none !important;
+}
+
+.titulosLogin {
+    color: #41c4b2;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.esqueceuSenha {
+    font-size: 13px;
+    color: #7d9a96;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.esqueceuSenha:hover {
+    color: #00bda3;
+}
+
+.bt-login {
+    background-color: #00bda3;
+    color: #f3f3f3;
+    font-size: 16px;
+    padding: 10px 164px;
+    font-weight: 500;
+    border: none;
+    border-radius: 53px;
+}
+
+.bt-bottom {
+    padding-bottom: 65px;
+}
+
+.bkg-img {
+    background-color: #2ddcc7e0 !important;
+}
+
+
+
+
+
+
+
+
+/* .bkgLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(133,200,191);
+    background: linear-gradient(-48deg, rgba(133,200,191,1) 0%, rgba(207,246,237,1) 100%);
+}
+
+.logo-container {           
+    height: 60px;           
+    background-color: #e4f1ef; 
+    display: flex;           
+    justify-content: flex-start;  
+    align-items: center;       
+}
+
+.bkgCardLogin {
+    background-color: #f3f3f3 !important;
+}
+
+.containerFoto {
+    background-color: #31c7b2;
+}
+
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    padding: 40px;
+   /* box-shadow: ; 
+    gap: 5px
+}
+
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+    color: #41c4b2;
+}
+
+.formLogin .input-login {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.formLogin label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.esqueciSenha {
+    font-size: 13px;
+    color: #616161;
+    text-decoration: none;
+}
+
+.esqueciSenha:hover {
+    color: #00bda3;
+}
+
+
+.bt-login {
+    background-color: #00bda3;
+    color: #f3f3f3;
+    font-size: 16px;
+    padding: 10px 50px;
+    font-weight: 500;
+    border: none;
+    border-radius: 53px;
+}
+ */
