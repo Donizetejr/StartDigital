@@ -1,0 +1,43 @@
+.tituloEsqueceuSenha {
+    color: #41c4b2;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.subtituloSenha {
+    color: #727272;
+}
+
+.emailLabel {
+    color: #5f5959;
+    font-weight: 500;
+}
+
+.bt-voltarLogin {
+    font-weight: 500 !important;
+    border-radius: 53px !important;
+}
+
+.bt-loginSenha {
+    background-color: #00bda3;
+    color: #f3f3f3;
+    font-size: 16px;
+    padding: 7px 40px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+}
+
+.bkg-card {
+    background-color: #f3f3f3 !important;
+}
+
+.borda-perso {
+    border: 2px solid #b0b0b0 !important; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.labelEmail {
+                                
+}
