@@ -1,0 +1,21 @@
+.bt-loginAlterar {
+    background-color: #00bda3;
+    color: #f3f3f3;
+    font-size: 16px;
+    padding: 12px 46px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+}
+
+.olho-magico {
+    position: absolute;
+    right: 36px;
+    top: 55px;
+}
+
+.olho-magic {
+    position: absolute;
+    right: 36px;
+    bottom: 112px;
+}

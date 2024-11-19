@@ -1,11 +1,13 @@
 .tituloEsqueceuSenha {
     color: #41c4b2;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
 }
 
 .subtituloSenha {
     color: #727272;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .emailLabel {
@@ -16,16 +18,23 @@
 .bt-voltarLogin {
     font-weight: 500 !important;
     border-radius: 53px !important;
+    opacity: 60% !important;
+    margin: 10px;
 }
 
 .bt-loginSenha {
     background-color: #00bda3;
     color: #f3f3f3;
-    font-size: 16px;
-    padding: 7px 40px;
+    font-size: 14px;
+    padding: 8px 41px;
     font-weight: 500;
     border: none;
     border-radius: 20px;
+    text-decoration: none;
+}
+
+.bt-loginSenha:hover {
+    color: #028876;
 }
 
 .bkg-card {
@@ -34,10 +43,13 @@
 
 .borda-perso {
     border: 2px solid #b0b0b0 !important; 
-    padding: 10px;
     border-radius: 5px;
+    padding: 4px 7px !important;
+    margin: 10px 0; 
 }
 
-.labelEmail {
-                                
+.container-padd {
+    padding: 1.5rem 2rem !important;
+    min-width: 500px;
 }
+

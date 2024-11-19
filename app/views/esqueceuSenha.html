@@ -21,45 +21,25 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card bkg-card">
-                        <div class="card-body">
+                        <div class="card-body container-padd">
                             <h2 class="text-center pt-3 tituloEsqueceuSenha">Esqueceu a senha?</h2>
                             <h6 class="text-center pb-4 subtituloSenha">Digite seu e-mail para enviar um link de redefinição de senha.</h6>
-                            <div class="form__group field pb-5">
-                                <span class="emailLabel">E-mail</span>
+                            <form action="#" method="post">
+                            <div class="form__group field pb-4">
+                                <label class="emailLabel">E-mail</label>
                                 <input type="email" class="form__field borda-perso" placeholder="Email" name="email" id='email' required />
-                                <label for="email" class="form__label"></label>
                             </div>
-                            <button type="button" class="bt-voltarLogin btn btn-outline-secondary">Secondary</button>
-                            <button type="submit" id="formulario" class="bt-loginSenha mb-4 mt-3">Enviar</button>
+                            <div class="text-center mt-3">
+                                <a href="telaLogin.html" id="formulario" class="bt-voltarLogin btn btn-outline-secondary"><i class="bi bi-arrow-left"></i>Voltar ao login</a>
+                                <button type="submit" class="bt-loginSenha mt-3">Enviar</button>
+                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
         </div>
     </section>
 </body>
+
 </html>
-
-
-<!-- <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="text-center">Esqueceu a senha?</h2>
-                <h6 class="text-center">Digite seu e-mail para enviar um link de redefinição de senha.</h6>
-                <div class="form-group-input field mb-3">
-                    <input type="input" class="email form-field-input" placeholder="Email" name="email"
-                        id='email' required />
-                    <label for="email" class="form-label-input">Email</label>
-                </div>
-                <a href="#" class="card-link">Voltar ao login</a>
-                <a href="#" class="card-link">Enviar</a>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-</div> -->

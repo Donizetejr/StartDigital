@@ -1,0 +1,31 @@
+.borda-token {
+    border: 2px solid #00bda3 !important; 
+    border-radius: 5px;
+    padding: 30px 37px !important;
+    margin: 10px 8px; 
+    max-width: 30px;
+}
+
+.linkClick {
+    font-size: 13px;
+    color: #41c4b2;
+    text-decoration: none;
+}
+
+.linkClick:hover {
+    color: #319487;
+}
+
+.bt-loginConfirmar {
+    background-color: #00bda3;
+    color: #f3f3f3;
+    font-size: 17px;
+    padding: 15px 67px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+}
+
+.bt-loginConfirmar:hover {
+    color: #038a78;
+}
