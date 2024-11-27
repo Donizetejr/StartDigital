@@ -24,28 +24,28 @@
                     <div class="card bkg-card">
                         <div class="card-body container-padd">
                             <h2 class="text-center pt-3 pb-1 tituloEsqueceuSenha">Insira o código de validação</h2>
-                            <h6 class="text-center pb-4 subtituloSenha">Nós enviaremos um código de validação para o email <span class="fw-bold">teste@gmail.com</span> </h6>
+                            <h6 class="text-center pb-4 subtituloSenha">Nós enviaremos um código de validação para o email <span class="fw-bold">teste@gmail.com</span></h6>
                             <div class="form__group field  text-center pb-2">
                                     <div class="d-inline-flex">
-                                        <input type="number" class="form__field borda-token" placeholder="Number"
-                                            name="number" id='number1' required />
+                                        <input type="text" class="form__field borda-token" placeholder="Number"
+                                            name="number" id='number1' maxlength="1" oninput="moveFocus(this, 'number2')" required />
                                     </div>
                                     <div class="d-inline-flex inputEstilo">
-                                        <input type="number" class="form__field borda-token" placeholder="Number"
-                                            name="number" id='number1' required />
+                                        <input type="text" class="form__field borda-token" placeholder="Number"
+                                            name="number" id='number2' maxlength="1" oninput="moveFocus(this, 'number3')" required />
                                     </div>
                                     <div class="d-inline-flex inputEstilo">
-                                        <input type="number" class="form__field borda-token" placeholder="Number"
-                                            name="number" id='number1' required />
+                                        <input type="text" class="form__field borda-token" placeholder="Number"
+                                            name="number" id='number3'  maxlength="1" oninput="moveFocus(this, 'number4')"required />
                                     </div>
                                     <div class="d-inline-flex inputEstilo">
-                                        <input type="number" class="form__field borda-token" placeholder="Number"
-                                            name="number" id='number1' required />
+                                        <input type="text" class="form__field borda-token" placeholder="Number"
+                                            name="number" id='number4' maxlength="1" oninput="moveFocus(this, '')" required />
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center mt-3 mb-4">
-                                <button type="submit" id="formulario" class="bt-loginConfirmar">Confirmar</button>
+                                <button type="submit" id="formulario" class="bt-loginConfirmar" onclick="validarToken()">Confirmar</button>
                             </div>
                             <div class="text-center subtituloSenha pb-5">
                                 <p>Não recebeu o código? <a href="#" class="linkClick">Clique aqui</a> para reenviar.</p>
@@ -58,27 +58,6 @@
     </section>
 </body>
 
+
+<script src="../src/js/token.js"></script>
 </html>
-
-
-<!-- <div class="form__group field pb-4">
-    <div class="row">
-
-        <div class="col-md-3">
-            <input type="text" class="form__field borda-token" placeholder="Number"
-                name="number" id='number1' required />
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form__field borda-token" placeholder="Number"
-                name="number" id='number1' required />
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form__field borda-token" placeholder="Number"
-                name="number" id='number1' required />
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form__field borda-token" placeholder="Number"
-                name="number" id='number1' required />
-        </div>
-    </div>
-</div> -->
