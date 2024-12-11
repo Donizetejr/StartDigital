@@ -30,7 +30,7 @@
                         </div>
                         <div class="card-body">
                             <h1 class="text-center pt-4 pb-4 tituloLogin">Login</h1>
-                            <form action="" method="" id="meuFormulario"> <!-- *** remover onsubmit html, colocar no js *** --> 
+                            <form action="" method="" id="meuFormulario"> 
                             <div class="form__group field">
                                 <input type="text" class="form__field pb-3" placeholder="email" name="email" id='email' />
                                 <label for="email" class="form__label">E-mail</label>                               
@@ -43,7 +43,7 @@
                                 <a href="esqueceuSenha.html" class="esqueceuSenha">Esqueceu a senha?</a>
                             </div>
                             <div class="text-center bt-bottom">
-                                <button type="submit" class="bt-login mt-3">LOGIN</button>
+                                <button type="submit" class="bt-login mt-3" id="botaoLogin">LOGIN</button>
                             </div>  
                             </form>             
                         </div>
@@ -92,6 +92,40 @@ document.addEventListener("DOMContentLoaded", function() {
     );
 });
 
+//Passo 1 - fazer lógica
+document.addEventListener("DOMContentLoaded", function() {
+    //document on submit {
+        //recebe retorno da função na variavel ->
+         formIsValid = validarFormulario(event) //true ou false
+
+        se formIsValid retornar falso {
+            //exibir notify informando o erro
+        } se não (quando retorna true) {
+            // exibir notify sucesso
+            // chamart função AJAX que ficxara comentada 
+        }
+    }
+});
+
+
+Passo 2 - transformar logica em codigo
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('meuFormulario').addEventListener('submit', function(evt){
+        //recebe retorno da função na variavel ->
+        let formIsValid = validarFormulario(event) //true ou false
+
+        //se formIsValid retornar falso 
+        if (false == formIsValid) {
+            //exibir notify informando o erro
+            Notify("formulário invalido", null, null, 'danger');
+        } else {
+            //se não (quando retorna true) 
+            // exibir notify sucesso
+            Notify("formulário envciado", null, null, 'success');
+            POasso 3- // chamart função AJAX que ficxara comentada 
+        }
+    });
+});
 
 </script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

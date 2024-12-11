@@ -1,24 +1,13 @@
- // Implementar o método onContentLoaded e nele chamar o onSubmit
- document.addEventListener("DOMContentLoaded", function() {
-    var formulario = document.getElementById("esqueciSenha");
-        formulario.addEventListener("submit", esqueciSenha);
-});
- 
- // Função para validar o formulário
- function esqueciSenha(event) {
-    // Impede o envio do formulário se houver erro
-    event.preventDefault();
+ // Lógica
 
-    // Obter os valores dos campos
-    var email = document.getElementById('email').value;
+// entrada email
+// ler valor de entrada
 
-    // Validar email (verifica se tem o formato correto)
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if (!emailPattern.test(email)) {
-        Notify("Por favor, insira um e-mail válido.", null, null, "warning");
-        return false;
-    }
+// funcao esqueceuSenha() 
+//     se email for igual a null ou " " 
+//     // exiba notify informando erro
+//     se email for < 4 caracteres ou não possui @
+//     // exiba notify informando erro
+//    se nao
+//    // email válido
 
-    // Se todas as validações passarem, envia o formulário
-    Notify("Enviado com sucesso!", null, null, "success");
-}
