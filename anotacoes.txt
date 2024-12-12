@@ -2,3 +2,60 @@
 label: texto acima do input
 placeholder: texto dentro do campo. 
 autofocus: cursor posicionado automaticamente no campo assim que a página for carregada.
+
+
+
+
+
+
+
+
+
+const form = document.querySelector('#redefinirForm')
+
+// Adiciona evento de 'submit' ao formulário
+form.addEventListener('submit', (event) => {
+
+  // Impede o envio tradicional do formulário
+  event.preventDefault();
+
+  // Obtém dados do formulário e converte para objeto Javascript
+  const data = Object.fromEntries(new FormData(event.target).entries());
+  console.log(data)
+
+  const {senha, confirmSenha} = data;
+
+  validarForm(senha, confirmSenha);
+});
+
+function validarSenha(senha) {
+    
+    if(senha === "") {
+        Notify("A senha não pode estar vazia.", null, null, "warning");
+        return false;
+    }
+    else if(senha.length < 8) {
+        Notify("A senha precisa ter no mínimo 8 caracteres.", null, null, "warning");
+        return false;
+    }
+
+    return true;
+}
+
+function validarSenha(confirmSenha) {
+    
+    if(confirmSenha != senha) {
+        Notify("A senha deve ser a mesma.", null, null, "warning");
+        return false;
+    }
+    return true;
+}
+
+function validarForm(senha, confirmSenha) {
+    var senhaIsValid = validarSenha(senha);
+    var confirmSenhaIsValid = validarSenha(confirmSenha);
+
+    if (senhaIsValid && confirmSenhaIsValid) {
+        Notify("Login realizado com sucesso!", null, null, "success");
+    }
+}

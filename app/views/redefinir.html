@@ -19,6 +19,7 @@
 
 <body class="bkg-container">
     <section>
+    <div id="notifications"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -26,15 +27,15 @@
                         <div class="card-body container-padd">
                             <h2 class="text-center pt-3 tituloEsqueceuSenha">Redefina sua nova senha</h2>
                             <h6 class="text-center pb-4 subtituloSenha">Digite sua nova senha e confirme abaixo.</h6>
-                            <form id="redefinirForm" action="#" method="post">
+                            <form id="redefinirForm">
                             <div class="form__group field pb-4">
                                 <div>
-                                    <label for="password" class="emailLabel">Nova senha:</label>
-                                    <input type="password" class="form__field borda-perso" placeholder="password" name="password" id='passwordEye' /><i class="bi bi-eye olho-magico"></i>
+                                    <label for="senha" class="emailLabel">Nova senha:</label>
+                                    <input type="password" class="form__field borda-perso" placeholder="password" name="senha" id='passwordEye' /><i class="bi bi-eye olho-magico"></i>
                                 </div>
                                 <div>
-                                    <label for="confirm-password" class="emailLabel">Confirmar senha:</label>
-                                    <input type="password" class="form__field borda-perso" placeholder="password" name="confirm-password" id='confirm-passwordEye' /><i class="bi bi-eye olho-magic"></i></i>
+                                    <label for="confirmaSenha" class="emailLabel">Confirmar senha:</label>
+                                    <input type="password" class="form__field borda-perso" placeholder="password" name="confirmaSenha" id='confirm-passwordEye' /><i class="bi bi-eye olho-magic"></i></i>
                                 </div>
                                 <div class="text-end mt-4">
                                     <button type="submit" id="formulario" class="bt-loginAlterar">Alterar</button>

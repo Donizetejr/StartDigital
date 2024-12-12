@@ -22,19 +22,37 @@
 //    senao 
 //    // senha válida
 
-var form = document.getElementById("meuFormulario");
+// var form = document.getElementById("meuFormulario");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+// form.addEventListener("submit", (event) => {
+//     event.preventDefault();
 
-    var inputEmail = document.getElementById("email");
-    var inputSenha = document.getElementById("senha");
+//     var inputEmail = document.getElementById("email");
+//     var inputSenha = document.getElementById("senha");
 
-    var email = inputEmail.value;
-    var senha = inputSenha.value;
+//     var email = inputEmail.value;
+//     var senha = inputSenha.value;
 
-    validarForm(email, senha);
-})
+//     validarForm(email, senha);
+// })
+
+const form = document.querySelector('#meuFormulario')
+
+// Adiciona evento de 'submit' ao formulário
+form.addEventListener('submit', (event) => {
+
+  // Impede o envio tradicional do formulário
+  event.preventDefault();
+
+  // Obtém dados do formulário e converte para objeto Javascript
+  const data = Object.fromEntries(new FormData(event.target).entries());
+  console.log(data)
+
+  var email = data.email;
+  var senha = data.senha;
+
+  validarForm(email, senha);
+});
 
 function validarEmail(email) {    
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
