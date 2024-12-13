@@ -95,7 +95,7 @@ a {
 .botao-plano,
 .botao-formulario {
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto-claro);
+    color: var(--cor-texto-claro) !important;
     padding: 8px 30px;
     font-weight: 500;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- Required meta tags -->
@@ -8,14 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/IndexStyles.css">
     <link rel="stylesheet" href="../src/css/input-style.css">
+    <link rel="stylesheet" href="../src/css/Notify.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Start Digital</title>
 </head>
 
 <body>
+    <div id="notifications"></div>
     <nav class="navbar navbar-expand-lg navbar-light bkg-nav">
         <div class="container">
             <div class="row">
@@ -272,22 +274,20 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <form class="contato-form">
+                    <form class="contato-form" id="formContato">
                         <div class="form-group-input field mb-3">
-                            <input type="input" class="form-field-input" placeholder="Nome" name="name" id='name'
-                                required />
+                            <input type="input" class="form-field-input" placeholder="Nome" name="nome" id='name' />
                             <label for="name" class="form-label-input">Nome</label>
                         </div>
                         <div class="form-group-input field mb-3">
-                            <input type="input" class="email form-field-input" placeholder="Email" name="email" id='email'
-                                required />
+                            <input type="input" class="email form-field-input" placeholder="Email" name="email" id='email'/>
                             <label for="email" class="form-label-input">Email</label>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group-input field mb-3 d-flex">
                                     <div class="me-3 flex-fill d-flex">
-                                        <input type="input" class="phone form-field-input" placeholder="Telefone" name="telefone" id='telefone' maxlength="15" required />
+                                        <input type="input" class="phone form-field-input" placeholder="Telefone" name="telefone" id='telefone' maxlength="15"  />
                                         <label for="telefone" class="form-label-input">Telefone</label>
                                     </div>
                                 </div>
@@ -295,7 +295,7 @@
                             <div class="col-md-6">
                                 <div class="form-group-input field mb-3 d-flex">
                                     <div class="me-3 flex-fill d-flex">
-                                        <input type="input" class="phone form-field-input" placeholder="Celular" name="celular" id='celular' required />
+                                        <input type="input" class="phone form-field-input" placeholder="Celular" name="celular" id='celular' />
                                         <label for="celular" class="form-label-input">Celular</label>
                                     </div>
                                 </div>
@@ -305,7 +305,7 @@
                             <div class="mb-3">
                                 <label for="faturamento" class="form-label-input">Faturamento Mensal</label>
                             </div>
-                            <select id="faturamento" class="form-select" name="faturamento" required>
+                            <select id="faturamento" class="form-select" name="faturamento">
                                 <option value="disabled select hidden">Selecione um valor</option>
                                 <option value="0-500">R$ 0 - R$ 500</option>
                                 <option value="500-1000">R$ 500 - R$ 1.000</option>
@@ -313,12 +313,11 @@
                                 <option value="acima-5000">Acima de R$ 5.000</option>
                             </select>
                         </div>
-                        <button type="submit" id="formulario" class="bt-contato">Enviar Mensagem</button>
+                        <button type="submit" class="bt-contato" id="formulario">Enviar Mensagem</button>
                     </form>
                     <div class="col-md-1"></div>
                 </div>
-            </div>
-            
+            </div>           
     </section>
     <footer class="bkg-rodape">
         <div class="text-center pt-4">
@@ -328,6 +327,8 @@
             Todos os direitos reservados.
         </div>
     </footer>
+    
+
 </body>
 
 <!-- Optional JavaScript -->
@@ -339,55 +340,13 @@
     crossorigin="anonymous"></script>
 
 <!-- Importação de arquivo JavaScript -->
-<script src="../js/index.js" type="text"></script>
+<script src="../src/js/index.js"></script>
+<script src="../src/js/Notify.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    // Seleciona todos os elementos com a classe "phone"
-    const telefoneInputs = document.querySelectorAll(".phone");
 
-    // Aplica a máscara a cada um dos inputs
-    telefoneInputs.forEach(function(input) {
-      input.addEventListener("input", function(event) {
-        let value = event.target.value;
-        value = value.replace(/\D/g, ""); // Remove tudo o que não é número
-        value = value.substring(0, 11); // Limita a 11 dígitos
+ 
 
-        // Formata o número conforme os caracteres são digitados
-        if (value.length > 2 && value.length <= 7) {
-          value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
-        } else if (value.length > 7) {
-          value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7)}`;
-        }
-
-        // Atualiza o valor do campo de input
-        event.target.value = value;
-      });
-    });
-
-   // Função para validar o e-mail
-function validarEmail(email) {
-    // Expressão regular para validar o formato de um e-mail
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return regex.test(email);
-}
-
-// Adicionando um listener para o envio do formulário
-document.getElementById("formulario").addEventListener("submit", function(event) {
-    // Pegando o valor do e-mail do campo
-    const email = document.getElementById("email").value;
-
-    // Validando o e-mail
-    if (validarEmail(email)) {
-        // Se o e-mail não for válido, impedimos o envio e mostramos um alerta
-        alert("Por favor, insira um e-mail válido.");
-        event.preventDefault();  // Previne o envio do formulário
-    } else {
-        // E-mail válido, o formulário pode ser enviado
-        alert("E-mail válido! Formulário enviado.");
-    }
-});
-
-/* 
+<!-- /* 
 Campos dos formulários para enviar para o Banco de Dados
 
 Campos: Nome, E-mail, Telefone, Celular, Faturamento Mensal.
@@ -398,8 +357,6 @@ Campos: Nome, E-mail, Telefone, Celular, Faturamento Mensal.
 2- A função salvarFormulario deve chamar a função validarCampos que fará a validação dos campos digitados pelo usuário, verificando se não estão preenchidos, se
 eles estiverem preenchidos, então deve ser dado alert("Dados salvos com sucesso!") OBS.: Estudar requisições ajax com js
 
-*/
-
-  </script>
+*/ -->
 
 </html>
