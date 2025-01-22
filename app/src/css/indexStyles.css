@@ -18,12 +18,12 @@ body {
     --cor-detalhe: #baccd9;
 }
 
-.separadores, 
-.fonte-padrao, 
-.titulo-clientes, 
+.separadores,
+.fonte-padrao,
+.titulo-clientes,
 .titulo-contato,
-.titulo-banner, 
-.titulo-servico, 
+.titulo-banner,
+.titulo-servico,
 .titulo-planos {
     color: var(--cor-principal);
 }
@@ -32,8 +32,8 @@ body {
     font-size: 13px;
 }
 
-.texto-menu, 
-.subtitulo-banner,  
+.texto-menu,
+.subtitulo-banner,
 .subtitulo-planos,
 .texto-banner,
 .texto-servico,
@@ -46,14 +46,15 @@ body {
     background: #f0fffc;
 
     .navbar-nav {
-    line-height: 0.5; 
-    padding-bottom: 15px;
-    } 
-    
+        line-height: 0.5;
+        padding-bottom: 15px;
+    }
+
     .nav-link {
-        line-height: 0.5; /* Ajuste conforme necessário */
-        margin-top: -23px; 
-    }   
+        line-height: 0.5;
+        /* Ajuste conforme necessário */
+        margin-top: -23px;
+    }
 }
 
 .banner {
@@ -116,8 +117,8 @@ a {
 
 .borda-personalizada {
     border-image: linear-gradient(to top, #d9f7f4, #58cec2) 1 !important;
-    padding: 0 45px 45px 45px; 
-    margin: 17px 0;    
+    padding: 0 45px 45px 45px;
+    margin: 17px 0;
 }
 
 
@@ -144,21 +145,21 @@ a {
 
 .planos {
     background-color: #fbfffe;
-    -webkit-box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
-    -moz-box-shadow: 0px 0px 15px 3px rgba(218,232,229,1);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(218, 232, 229, 1);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(218, 232, 229, 1);
     box-shadow: 0px 0px 15px 3px rgb(211, 233, 228);
 }
- 
+
 .shadow-dark {
-    -webkit-box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
-    -moz-box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
-    box-shadow: 0px 0px 15px 1px rgba(35,108,137,0.5);
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(35, 108, 137, 0.5);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(35, 108, 137, 0.5);
+    box-shadow: 0px 0px 15px 1px rgba(35, 108, 137, 0.5);
 }
 
 .shadow-light {
-    -webkit-box-shadow: 0px 0px 25px 5px rgba(235,240,239,1);
-    -moz-box-shadow: 0px 0px 25px 5px rgba(235,240,239,1);
-    box-shadow: 0px 0px 25px 5px rgba(235,240,239,1)
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(235, 240, 239, 1);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(235, 240, 239, 1);
+    box-shadow: 0px 0px 25px 5px rgba(235, 240, 239, 1)
 }
 
 .separador-planos {
@@ -182,7 +183,7 @@ a {
     color: rgb(194, 36, 36);
 }
 
-.nome-servico, 
+.nome-servico,
 .nome-plano {
     font-size: 28px;
     font-weight: 500;
@@ -192,7 +193,7 @@ a {
 .rs-planos-light {
     position: absolute;
     top: 21%;
-    left:28%;
+    left: 28%;
     color: var(--cor-escuro-mais);
 }
 
@@ -233,11 +234,11 @@ a {
 }
 
 .altura-card {
-       margin-top: -8px;
-       height: 98%;
-    }   
+    margin-top: -8px;
+    height: 98%;
+}
 
-.descricao-plano, 
+.descricao-plano,
 .substitulo-informacoes {
     font-size: 18px;
     font-weight: 400;
@@ -316,7 +317,7 @@ a {
 }
 
 .espaco-letras {
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
     font-size: 12px;
 }
 
@@ -347,5 +348,9 @@ a {
     font-size: 12px;
 }
 
-
-            
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 9999;
+}
