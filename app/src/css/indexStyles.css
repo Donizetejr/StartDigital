@@ -58,17 +58,21 @@ body {
 }
 
 .banner {
-    background-image: url('../images/banner.png');
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
 
-    .row {
+    &.row {
         position: absolute;
         top: 25%;
         right: 45%;
     }
+
+    @media (min-width: 1367px) and (min-height: 768px) {
+        height: 74vh;
+    }
 }
+
 
 .titulo-banner {
     font-size: 35px;
