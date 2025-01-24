@@ -57,21 +57,25 @@ body {
     }
 }
 
-.banner {
+.banner-imagem {
     height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-    &.row {
-        position: absolute;
-        top: 25%;
-        right: 45%;
-    }
+.banner-conteudo {
+    position: absolute;
+    top: 25%;
+    right: 45%;
+}
 
-    @media (min-width: 1367px) and (min-height: 768px) {
+@media (min-width: 1367px) and (min-height: 768px) {
+    .banner-imagem {
         height: 74vh;
     }
 }
+
 
 
 .titulo-banner {
