@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Circular', sans-serif;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+/* -------------- Inicio NAV -------------- */
+
+/* Bkg nav */
+.navbar.navbar-color {
+    background-color: #F0FFFC !important;
+}
+
+/* SideBar */
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgb(240, 255, 252);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* cor fonte */
+.text-color {
+    color:#0C1E30;
+}
+
+/* cor bordabottom sidebar*/
+.offcanvas-header {
+    border-bottom: 1px solid #c5e9d8 !important; 
+}
+
+/* cor/borda botao nav */
+.menu-contato {
+    text-decoration: none;
+    color: #f2f2f2;
+    background-color: #0C1E30;  /* ou #27EDA8 */
+    border-radius: 20px;
+    padding: 9px 17px 9px;
+    letter-spacing: 1px;
+}
+
+/* -------------- Fim NAV --------------*/
+
+
+
+/* -------------- Inicio BANNER -------------- */
+

@@ -67,10 +67,6 @@ body {
         top: 25%;
         right: 45%;
     }
-
-    @media (min-width: 1367px) and (min-height: 768px) {
-        height: 74vh;
-    }
 }
 
 

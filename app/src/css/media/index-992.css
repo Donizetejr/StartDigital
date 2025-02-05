@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+    .banner {
+        height: 74vh;
+    }
+
+    .titulo-planos {
+        font-size: 10px;
+        color: red;
+    }
+}
