@@ -6,6 +6,14 @@
 
 body {
     background-color: #F6F6F6;
+    padding-top: 70px;
+}
+
+:root {
+    --cor-azul-escuro: #002c41;
+    --cor-verde-agua: #00bda3;
+    --cor-texto-branco: #f3f3f3;
+    --cor-texto-descricao: #738b99;
 }
 
 /* -------------- Inicio NAV -------------- */
@@ -36,8 +44,8 @@ body {
 /* cor/borda botao nav */
 .menu-contato {
     text-decoration: none;
-    color: #f2f2f2;
-    background-color: #0C1E30;  /* ou #27EDA8 */
+    color: var(--cor-texto-branco);
+    background-color: var(--cor-azul-escuro);  /* ou #27EDA8 */
     border-radius: 20px;
     padding: 9px 17px 9px;
     letter-spacing: 1px;
@@ -49,3 +57,22 @@ body {
 
 /* -------------- Inicio BANNER -------------- */
 
+
+
+@media (min-width: 991px) {
+    #banner {
+        background-image: url(/app/src/images/banner4k.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 991px) {
+    #banner {
+        background-image: url(/app/src/images/banner-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
