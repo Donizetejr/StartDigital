@@ -3,27 +3,114 @@
     padding: 0;
 }
 
+:root {
+    --cor-azul-escuro: #002c41;
+    --cor-verde-agua: #00bda3;
+    --cor-texto-branco: #f3f3f3;
+    --cor-texto-descricao: #738b99;
+}
+
+p {
+    color:  var(--cor-texto-descricao);
+}
+
+/* Cor titulos */
+.titulo-sessoes {
+    color: var(--cor-azul-escuro);
+}
+
+
 /* Section Nav */
+.bkg-nav {
+    background-color: #f0fffc;
+}
+
+/* Logo responsividade */
+
+/* Logo maior (padrão - telas grandes) */
+.logo {
+    content: url("/app/src/images/logo-start_lg.png");
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Logo menor (para telas menores que 576px - celulares ) */
+@media (max-width: 576px) {
+    .logo {
+        content: url("/app/src/images/logo-start_sm_md.png");
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+}
+
+.navbar-brand img {
+    height: 30px; /* Ajuste a altura conforme necessário */
+    object-fit: contain; /* Garante que a imagem não fique esticada */
+    display: block; /* Evita espaços indesejados */
+}
+
+/* Garante alinhamento correto da logo */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Ajuste para telas menores (Celular - <576px) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        justify-content: flex-start; /* Alinha a logo à esquerda */
+        padding-left: 10px; /* Pequeno espaçamento para não encostar na borda */
+    }
+}
+
+
+/* Estilização textos nav */ 
+.navbar-nav .nav-link.active {
+    color: var(--cor-azul-escuro) !important; /* Muda a cor do item ativo */
+    font-weight: 600; /* Deixa o texto mais forte */
+}
+
+.nav-link {
+    position: relative;
+    color: var(--cor-azul-escuro);
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: #006e60;
+    transform: scaleX(0); /* Começa invisível */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); /* Aparece ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .nav-link::after {
+        display: none;
+    }
+}
 
 /* Section Banner */
 
 /* Estilos para o banner */
-.banner {
-    width: 100%;
-    height: 100vh; /* Altura total da viewport */
-    background-color: #b96a6a; /* Imagem padrão para desktop (virará background-image*/
-    background-size: cover; /* Cobrir toda a área */
-    background-position: center; /* Centralizar a imagem */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+.container-banner {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; 
 }
 
-
+/* Botão banner */
 .btn-banner {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #00bda3;
     color: white;
     text-decoration: none;
@@ -31,31 +118,116 @@
     font-size: 1.2rem;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .banner {
-        background-color: #b96a6a; /* Imagem padrão para desktop (virará background-image*/
-        /* Imagem para mobile */
-    }
-
-    .banner-content h1 {
-        font-size: 2rem;
-    }
-
-    .banner-content p {
-        font-size: 1rem;
-    }
-
-    .banner-content .btn {
-        font-size: 1rem;
-    }
-}
 
 /* Section Serviços */
+.bkg-servicos {
+    background-color: #f8f9fa;
+}
+
+
+.separador-container {
+        width: 40px;
+        height: 3px; /* Define a altura da linha */
+        background-color: var(--cor-azul-escuro); /* Cor da linha */
+        margin: auto; /* Centraliza horizontalmente */
+}
+
+
+.icone-circulo {
+    width: 128px; /* Tamanho do círculo */
+    height: 115px;
+    background-color: #dbeae6; /* Azul claro transparente */
+    border-radius: 50%; /* Torna o fundo um círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Centraliza */
+}
+
+/* card serviços */
+.card {
+    border: 1px solid #bfd6d2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+/* texto */
+.card-texto {
+    background-color: #f8fdfc;
+    border-top: 1px solid #f1f1f1;
+}
+
 
 /* Section Planos */
+.bkg-planos {
+    background-color: var(--cor-azul-escuro);
+    -webkit-box-shadow: -1px 3px 35px -8px rgba(38,50,56,1);
+    -moz-box-shadow: -1px 3px 35px -8px rgba(38,50,56,1);
+    box-shadow: -1px 3px 35px -8px rgba(38,50,56,1);
+}
 
+/* Estilizacao para card claro (padrao) */
+.card-padrao {
+    border: 1px solid #fcf8f8;
+    border-radius: 9px;
+    overflow: hidden;
+}
 
+.card-padrao:hover {
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0px 8px 22px -17px rgba(195,199,201,1);
+    -moz-box-shadow: 0px 8px 22px -17px rgba(195,199,201,1);
+    box-shadow: 0px 8px 22px -17px rgba(195,199,201,1);
+    transition: 0.3s;
+}
+
+.separador-padrao {
+    border-bottom: 1px solid #002c41;
+}
+
+.texto-planos-padrao {
+    color: var(--cor-azul-escuro);
+}
+
+/* Estilizacao para card escuro (basico/premium) */
+.card-basico-premium {
+    background-color: #1d556b ;
+    border: none;
+    border-radius: 7px;
+}
+
+.separador-basico-premium {
+    border-bottom: 2px solid #dbf8f247;
+}
+
+/* Botao planos */
+.botao-planos { 
+    border-radius: 25px;
+    padding: 11px 50px 11px;
+    background-color: var(--cor-verde-agua);
+    border: none;
+    font-size: 18px;
+}
+
+/* Destaque responsivo card principal */
+
+@media (min-width: 768px) {
+    .destaque {
+        transform: scale(1.16); /* Aumenta o tamanho */
+        z-index: 1; /* Mantém o card acima dos outros */
+    }
+
+    .destaque:hover {
+        transform: scale(1.18); /* Dá um efeito maior no hover */
+        transition: 0.3s;
+    }
+}
 
 /* Section Rodapé */
 .bkg-rodape {

@@ -9,6 +9,8 @@
     <meta name="keywords"
         content="Criação de landing page, desenvolvimento de sites, software personalizado, sistemas integrados, landing page para startups, design de sites responsivos, soluções tecnológicas, desenvolvimento de software, criação de sistemas, consultoria em TI">
     <meta name="author" content="Start Up Digital Tecnologia da Informação LTDA">
+    <link rel="shortcut icon" href="./app/src/images/logo-start_sm_md.png" type="image/x-icon">
+    <title>Start Digital</title>
 
     <!-- Inicio/Área para CSS -->
     <!-- Bootstrap -->
@@ -18,34 +20,36 @@
     <link rel="stylesheet" href="./app/src/css/indexResponsive.css">
     <!-- Fim/Área para CSS -->
 
-    <title>Start Digital</title>
 
 </head>
 
 <body>
 
     <!-- Inicio Nav -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bkg-nav">
         <div class="container-fluid mb-1">
-            <a class="navbar-brand mx-5" href="#">Start Digital</a>
+            <a class="navbar-brand mb-2" href="#">
+                <h1 class="m-0">
+                    <img class="logo" src="./app/src/images/logo-start_lg.png" alt="Logo Start Digital">
+                </h1>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto fs-5">
+                <ul class="navbar-nav ms-auto fs-6 me-5">
                     <li class="nav-item mx-2">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#">Planos</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success me-4" type="submit">Fale Conosco</button>
             </div>
         </div>
     </nav>
@@ -53,87 +57,83 @@
 
     <!-- Inicio Banner -->
     <section>
-        <div class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-12">
-                        <a href="#" class="btn-banner">Faça seu orçamento!</a>
+        <div>
+            <div class="container-banner">
+                <div class="row p-0">
+                    <img class="img-fluid d-md-none banner-mobile" src="./app/src/images/banner-mobile.png">
+                    <img class="img-fluid d-none d-md-block" src="./app/src/images/banner-desktop.png">
+                </div>
+            </div>
+    </section>
+    <!-- Fim Banner -->
+
+    <!-- Inicio Card Serviços -->
+    <section id="servicos">
+        <div class="bkg-servicos pt-4 pb-5">
+            <h2 class="text-center pt-3 pb-1 titulo-sessoes">Serviços</h2>
+            <div class="separador-container"></div>
+            <div class="container pb-5">
+                <div class="row mx-auto g-5 pt-5">
+                    <div class="col-md-4 col-12">
+                        <div class="card">
+                            <h5 class="card-title text-center pt-4 px-3 titulo-servico">Gestão de Redes Sociais e
+                                Planejamento de Conteúdo</h5>
+                            <div class="icone-circulo">
+                                <img class="mx-auto pt-4 pb-4" src="./app/src/images/Icon1.png" width="78px">
+                            </div>
+                            <div class="card-header card-texto pt-3">
+                                <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes
+                                    Sociais direcionando o público-alvo para a maior captação do cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card">
+                            <h5 class="card-title text-center pt-4 px-3 titulo-servico">Gestão de Redes Sociais e
+                                Planejamento de Conteúdo</h5>
+                                <div class="icone-circulo">
+                                    <img class="mx-auto pt-4 pb-4" src="./app/src/images/Icon2.png" width="75px">
+                                </div>
+                            <div class="card-header card-texto pt-3">
+                                <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes
+                                    Sociais direcionando o público-alvo para a maior captação do cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card">
+                            <h5 class="card-title text-center pt-4 px-3 titulo-servico">Gestão de Redes Sociais e
+                                Planejamento de Conteúdo</h5>
+                                <div class="icone-circulo">
+                                    <img class="mx-auto pt-4 pb-4" src="./app/src/images/Icon3.png" width="75px">
+                                </div>
+                            <div class="card-header card-texto pt-3">
+                                <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes
+                                    Sociais direcionando o público-alvo para a maior captação do cliente.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Fim Banner -->
 
-    <!-- Inicio Card Serviços -->
-    <h2 class="text-center p-5">Serviços</h2>
-
-    <div class="container pb-5">
-        <div class="row mx-auto g-4">
-            <div class="col-md-4 col-12">
-                <div class="card">
-                    <h5 class="card-title text-center pt-4">Gestão de Redes Sociais e Planejamento de Conteúdo</h5>
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-header">
-                        <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes Sociais
-                            direcionando o público-alvo para a maior captação do cliente.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="card">
-                    <h5 class="card-title text-center pt-4">Gestão de Redes Sociais e Planejamento de Conteúdo</h5>
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-header">
-                        <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes Sociais
-                            direcionando o público-alvo para a maior captação do cliente.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="card">
-                    <h5 class="card-title text-center pt-4">Gestão de Redes Sociais e Planejamento de Conteúdo</h5>
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-header">
-                        <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes Sociais
-                            direcionando o público-alvo para a maior captação do cliente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h2 class="text-center">Planos</h2>
-    <p class="text-center pb-4 pt-2">Escolha o plano que melhor se adapta às suas necessidades.</p>
     <!-- Fim Card Serviços -->
 
     <!-- Inicio Card Planos -->
-    <div class="container pb-5">
+    <section>
+        <div class="bkg-planos pb-5">
+        <h2 class="text-center pt-5 text-white">Planos</h2>
+        <p class="text-center pb-5 mb-4 pt-2 fs-5">Escolha o plano que melhor se adapta às suas necessidades.</p>
+        <div class="container pb-5">
         <div class="row mx-auto g-4">
             <div class="col-md-4 col-12">
-                <div class="card">
+                <div class="card card-basico-premium card-dark">
                     <div class="card-header">
-                        <h3 class="text-center">Padrão</h3>
-                        <h6 class="card-subtitle mt-4 mb-3 fs-3 text-body-secondary text-center">R$ 49,99</h6>
+                        <h3 class="text-center text-white separador-basico-premium mt-3 mb-5 pb-3 mx-4">Básico</h3>
+                        <h6 class="card-subtitle mt-4 mb-3 fs-2 text-white text-center">R$ 49,99</h6>
                         <div class="text-center">
-                            <div class="text-center">
+                            <div class="text-center text-white">
                                 <ul class="list-unstyled">
                                     <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
                                     <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
@@ -144,17 +144,17 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-primary">Assinar</button>
+                            <button class="botao-planos text-white mb-4">Assinar</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-12">
-                <div class="card">
+            <div class="col-md-4 col-12 destaque">
+                <div class="card card-padrao">
                     <div class="card-header">
-                        <h3 class="text-center">Padrão</h3>
-                        <h6 class="card-subtitle mt-4 mb-3 fs-3 text-body-secondary text-center">R$ 49,99</h6>
-                        <div class="text-center">
+                        <h3 class="text-center titulo-sessoes separador-padrao mt-3 mb-5 pb-3 mx-4">Padrão</h3>
+                        <h6 class="card-subtitle mt-4 mb-3 fs-2 text-center texto-planos-padrao">R$ 49,99</h6>
+                        <div class="text-center texto-planos-padrao">
                             <ul class="list-unstyled">
                                 <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
                                 <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
@@ -164,33 +164,37 @@
                             </ul>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-primary">Assinar</button>
+                            <button class="botao-planos text-white mb-4">Assinar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="card">
+                <div class="card card-basico-premium">
                     <div class="card-header">
-                        <h3 class="text-center">Padrão</h3>
-                        <h6 class="card-subtitle mt-4 mb-3 fs-3 text-body-secondary text-center">R$ 49,99</h6>
+                        <h3 class="text-center text-white separador-basico-premium mt-3 mb-5 pb-3 mx-4">Premium</h3>
+                        <h6 class="card-subtitle mt-4 mb-3 fs-2 text-white text-center">R$ 49,99</h6>
                         <div class="text-center">
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
-                                <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
-                                <li><i class="bi bi-x icon-close"></i> 15 projetos integrados</li>
-                                <li><i class="bi bi-x icon-close"></i> Download ilimitado</li>
-                                <li class="mb-5"><i class="bi bi-check2 icon-check"></i> 5 Uploads</li>
-                            </ul>
+                            <div class="text-center text-white">
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
+                                    <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
+                                    <li><i class="bi bi-x icon-close"></i> 15 projetos integrados</li>
+                                    <li><i class="bi bi-x icon-close"></i> Download ilimitado</li>
+                                    <li class="mb-5"><i class="bi bi-check2 icon-check"></i> 5 Uploads</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-primary">Assinar</button>
+                            <button class="botao-planos text-white mb-4">Assinar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+        </div>
+    </section>
     <!-- Fim Card Planos -->
 
     <footer>
