@@ -101,13 +101,6 @@ p {
 
 /* Section Banner */
 
-/* Estilos para o banner */
-.container-banner {
-    margin: 0;
-    padding: 0;
-    max-width: 100%; 
-}
-
 /* Botão banner */
 .btn-banner {
     padding: 15px 30px;
@@ -124,14 +117,12 @@ p {
     background-color: #f8f9fa;
 }
 
-
 .separador-container {
         width: 40px;
         height: 3px; 
         background-color: var(--cor-azul-escuro); 
         margin: auto; 
 }
-
 
 .icone-circulo {
     width: 128px; 
