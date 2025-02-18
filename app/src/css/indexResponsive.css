@@ -44,30 +44,30 @@ p {
 }
 
 .navbar-brand img {
-    height: 30px; /* Ajuste a altura conforme necessário */
-    object-fit: contain; /* Garante que a imagem não fique esticada */
-    display: block; /* Evita espaços indesejados */
+    height: 30px; 
+    object-fit: contain; 
+    display: block; 
 }
 
 /* Garante alinhamento correto da logo */
 .navbar-brand {
     display: flex;
-    align-items: center; /* Alinha verticalmente */
+    align-items: center; 
 }
 
 /* Ajuste para telas menores (Celular - <576px) */
 @media (max-width: 576px) {
     .navbar-brand {
-        justify-content: flex-start; /* Alinha a logo à esquerda */
-        padding-left: 10px; /* Pequeno espaçamento para não encostar na borda */
+        justify-content: flex-start; 
+        padding-left: 10px; 
     }
 }
 
 
 /* Estilização textos nav */ 
 .navbar-nav .nav-link.active {
-    color: var(--cor-azul-escuro) !important; /* Muda a cor do item ativo */
-    font-weight: 600; /* Deixa o texto mais forte */
+    color: var(--cor-azul-escuro) !important; 
+    font-weight: 600; 
 }
 
 .nav-link {
@@ -127,21 +127,21 @@ p {
 
 .separador-container {
         width: 40px;
-        height: 3px; /* Define a altura da linha */
-        background-color: var(--cor-azul-escuro); /* Cor da linha */
-        margin: auto; /* Centraliza horizontalmente */
+        height: 3px; 
+        background-color: var(--cor-azul-escuro); 
+        margin: auto; 
 }
 
 
 .icone-circulo {
-    width: 128px; /* Tamanho do círculo */
+    width: 128px; 
     height: 115px;
-    background-color: #dbeae6; /* Azul claro transparente */
-    border-radius: 50%; /* Torna o fundo um círculo */
+    background-color: #dbeae6; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto; /* Centraliza */
+    margin: 20px auto; 
 }
 
 /* card serviços */
@@ -170,6 +170,7 @@ p {
     -webkit-box-shadow: -1px 3px 35px -8px rgba(38,50,56,1);
     -moz-box-shadow: -1px 3px 35px -8px rgba(38,50,56,1);
     box-shadow: -1px 3px 35px -8px rgba(38,50,56,1);
+    padding-bottom: 90px;
 }
 
 /* Estilizacao para card claro (padrao) */
@@ -188,7 +189,7 @@ p {
 }
 
 .separador-padrao {
-    border-bottom: 1px solid #002c41;
+    border-bottom: 1px solid #002c4180;
 }
 
 .texto-planos-padrao {
@@ -206,6 +207,39 @@ p {
     border-bottom: 2px solid #dbf8f247;
 }
 
+.color-planos {
+    color: var(--cor-azul-escuro);
+}
+
+/* Ajuste do valor (R$) */
+.real {
+    position: absolute;
+    top: 28%;
+    left: 30%;
+}
+
+.icon-check {
+    color: var(--cor-verde-agua);
+}
+
+.icon-close {
+    color: rgb(194, 36, 36);
+}
+
+@media (max-width: 768px) {
+    .rs-escuro {
+        top: 27%;
+        left: 35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+    .rs-escuro {
+        top: 27%;
+        left: 28%;
+    }
+}
+
 /* Botao planos */
 .botao-planos { 
     border-radius: 25px;
@@ -216,7 +250,6 @@ p {
 }
 
 /* Destaque responsivo card principal */
-
 @media (min-width: 768px) {
     .destaque {
         transform: scale(1.16); /* Aumenta o tamanho */
@@ -229,13 +262,60 @@ p {
     }
 }
 
+/* Section Entre em Contato */
+.fale-conosco {
+    background-image: url(../images/bkg-contato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #064663;
+    padding: 75px 20px;
+}
+
+.texto-contato {
+    color: #304f55;
+    font-size: 18px;
+}
+
+.btn-whatsapp {
+    background-color: var(--cor-verde-agua);
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    animation: pulse 1.5s infinite;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20aa93d0;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 /* Section Rodapé */
 .bkg-rodape {
-    background-color: #fbfbfc;
+    background-color: #f4f5f4;
+    margin: 0;
 }
 
 .rodape {
     
     color: #6d8088;
-    font-size: 12px;
+    font-size: 13px;
+}
+
+/* botao flutuante */ 
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 9999;
 }
