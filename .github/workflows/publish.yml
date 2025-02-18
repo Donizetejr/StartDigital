@@ -17,6 +17,7 @@ jobs:
         run: | 
           cd StartDigital
           npm install
+          npm i bootstrap-icons
 
       # - name: Build
       #   run: npm run build # The build command of your project
