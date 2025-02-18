@@ -1,343 +1,240 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Transforme ideias em realidade digital com especialistas em sites, landing pages e software personalizado. Aumente vendas e otimize processos online.">
-    <meta name="keywords" content="Criação de landing page, desenvolvimento de sites, software personalizado, sistemas integrados, landing page para startups, design de sites responsivos,
-     soluções tecnológicas, desenvolvimento de software, criação de sistemas, consultoria em TI">
+    <meta name="keywords"
+        content="Criação de landing page, desenvolvimento de sites, software personalizado, sistemas integrados, landing page para startups, design de sites responsivos, soluções tecnológicas, desenvolvimento de software, criação de sistemas, consultoria em TI">
     <meta name="author" content="Start Up Digital Tecnologia da Informação LTDA">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../app/src/css/indexStyles.css">
-    <link rel="stylesheet" href="../app/src/css/media/index-992.css">
-    <link rel="stylesheet" href="../app/src/css/input-style.css">
-    <link rel="stylesheet" href="../app/src/css/Notify.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./app/src/images/logo-start_sm_md.png" type="image/x-icon">
     <title>Start Digital</title>
+
+    <!-- Inicio/Área para CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app/src/css/indexResponsive.css">
+    <!-- Fim/Área para CSS -->
+
+
 </head>
 
 <body>
-    <div id="notifications"></div>
-    <nav class="navbar navbar-expand-md navbar-light bkg-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-2">
-                    <div class="nav-img">
-                        <img src="../app/src/images/logo-start_lg.png" width="300px">
-                    </div>
-                </div>
-                <div class="col-md-8 offset-md-8">
-                    <ul class="navbar-nav justify-content-center ">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nossos Clientes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Fale conosco</a></li>
-                    </ul>
-                </div>
+
+    <!-- Inicio Nav -->
+    <nav class="navbar navbar-expand-md bkg-nav">
+        <div class="container-fluid mb-1">
+            <a class="navbar-brand mb-2" href="#">
+                <h1 class="m-0">
+                    <img class="logo" src="./app/src/images/logo-start_lg.png" alt="Logo Start Digital">
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto fs-6 me-5">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Planos</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <section>
-        <img src="../app/src/images/banner-desktop.png" class="banner" />
-        <div class="row banner">
-            <div class="row">
-                <div class="col-sm-6"></div>
-                <div class="col-sm-6">
-                    <h1 class="titulo-banner">AUMENTAR VENDAS!</h1>
-                    <h2 class="subtitulo-banner">Não perca tempo!</h2>
-                    <span class="texto-banner d-block">Milhares de pessoas<span>
-                            <span class="d-block">tem interesse nos seus serviços!</span>
-                            <span class="d-block">Vamos dar START nas estratégias de</span>
-                            <span class="d-block pb-3">MARKETING DIGITAL!</span>
-                            <button class="botao-banner">Faça um orçamento!</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="separadores separador-container">
-                <div class="separador"></div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <h2 class="titulo-servico text-center py-3">Serviços</h2>
-        </div>
-        <div class="row d-flex justify-content-center py-5">
-            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center mb-5">
-                <div class="icon mb-2">
-                    <img src="../app/src/images/Icon1.png" alt="Ícone 1" class="icon mb-1" width="85px">
-                </div>
-                <h4 class="nome-servico">Gestão de Redes Sociais</h4>
-                <h4 class="nome-servico"> e Criação de Conteúdo</h4>
-                <span class="texto-servico d-block">Planejamos o conteúdo e fazemos o</span>
-                <span class="texto-servico d-block">gerenciamento das suas Redes Sociais</span>
-                <span class="texto-servico d-block">direcionando o público-alvo para a</span>
-                <span class="texto-servico d-block">maior captação de cliente</span>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center mb-5">
-                <img src="../app/src/images/Icon2.png" alt="Ícone 2" class="icon mb-3" width="85px">
-                <h4 class="nome-servico">Criação de Sites para</h4>
-                <h4 class="nome-servico">obtenção de clientes</h4>
-                <span class="texto-servico d-block">Tenha um site com apresentação</span>
-                <span class="texto-servico d-block">impecável e conquiste novos clientes</span>
-                <span class="texto-servico d-block">direcionando e aumentando a</span>
-                <span class="texto-servico d-block">eficácia de seus anúncios</span>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center mb-5">
-                <img src="../app/src/images/Icon3.png" alt="Ícone 3" class="icon mb-3" width="85px">
-                <h4 class="nome-servico">Gestão de anúncios no</h4>
-                <h4 class="nome-servico">Google e Instagram</h4>
-                <span class="texto-servico d-block">Fazemos a gestão de seus anúncios nas</span>
-                <span class="texto-servico d-block">melhores ferramentas do mercado, </span>
-                <span class="texto-servico d-block">direcionando o público e gerando</span>
-                <span class="texto-servico d-block">interesse para atração de novos clientes.</span>
-            </div>
-        </div>
-    </section>
-    <section class="planos">
+    <!-- Fim Nav -->
+
+    <!-- Inicio Banner -->
+    <section id="banner">
         <div>
-            <h2 class="titulo-planos text-center pt-5 pb-3">Planos</h2>
-            <p class="subtitulo-planos text-center">Escolha o plano que melhor se adapta às suas necessidades.</p>
-        </div>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center borda-personalizada shadow-light">
-                        <div class="card-body">
-                            <h2 class="nome-plano card-title my-3 pb-2 separador-planos">Básico</h2>
-                            <div class="my-3">
-                                <span class="rs-planos-light d-flex flex-column mb-3 h5">R$</span>
-                                <span class="valor-plano-light h1">28</span>
-                                <span class="valor-plano-light h4">/mês</span>
+            <div class="container-banner">
+                <div class="row p-0">
+                    <img class="img-fluid d-md-none banner-mobile" src="./app/src/images/banner-mobile.png">
+                    <img class="img-fluid d-none d-md-block" src="./app/src/images/banner-desktop.png">
+                </div>
+            </div>
+    </section>
+    <!-- Fim Banner -->
+
+    <!-- Inicio Card Serviços -->
+    <section id="servicos">
+        <div class="bkg-servicos pt-4 pb-5">
+            <h2 class="text-center pt-3 pb-1 titulo-sessoes">Serviços</h2>
+            <div class="separador-container"></div>
+            <div class="container pb-5">
+                <div class="row mx-auto g-5 pt-5">
+                    <div class="col-md-4 col-12">
+                        <div class="card">
+                            <h5 class="card-title text-center pt-4 px-3 titulo-servico">Gestão de Redes Sociais e
+                                Planejamento de Conteúdo</h5>
+                            <div class="icone-circulo">
+                                <img class="mx-auto pt-4 pb-4" src="./app/src/images/Icon1.png" width="78px">
                             </div>
-                            <div class="plano-light">
-                                <span class="d-block"><i class="bi bi-check2 icon-check"></i>E-mail suporte</span>
-                                <span class="d-block"><i class="bi bi-check2 icon-check"></i>10 usuários</span>
-                                <span class="d-block"><i class="bi bi-x icon-close"></i>15 projetos integrados</span>
-                                <span class="d-block"><i class="bi bi-x icon-close"></i>Download ilimitado</span>
-                                <span class="d-block mb-5"><i class="bi bi-check2 icon-check"></i>5 Uploads</span>
-                                <a href="#" class="botao-plano">Assinar</a>
+                            <div class="card-header card-texto pt-3">
+                                <p class="text-center">Planejamos o conteúdo e fazemos o gerenciamento das suas Redes
+                                    Sociais direcionando o público-alvo para a maior captação do cliente.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center borda-personalizada bkg-plano-dark shadow-dark altura-card">
-                        <div class="card-body">
-                            <h2 class="nome-plano card-title mt-3 mb-5 pb-3 text-white separador-dark">Padrão</h2>
-                            <div class="my-3">
-                                <span class="rs-planos-dark d-flex flex-column mb-3 h5">R$</span>
-                                <span class="valor-plano-dark h1">57</span>
-                                <span class="valor-plano-dark h4">/mês</span>
+                    <div class="col-md-4 col-12">
+                        <div class="card">
+                            <h5 class="card-title text-center pt-4 px-3 titulo-servico">Criação de Sites para
+                                obtenção de clientes</h5>
+                            <div class="icone-circulo">
+                                <img class="mx-auto pt-4 pb-4" src="./app/src/images/Icon2.png" width="75px">
                             </div>
-                            <div>
-                                <span class="d-block"><i class="bi bi-check2 icon-check"></i>E-mail suporte</span>
-                                <span class="d-block"><i class="bi bi-check2 icon-check"></i>10 usuários</span>
-                                <span class="d-block"><i class="bi bi-x icon-close"></i>15 projetos integrados</span>
-                                <span class="d-block"><i class="bi bi-x icon-close"></i>Download ilimitado</span>
-                                <span class="d-block mb-5"><i class="bi bi-check2 icon-check"></i>5 Uploads</span>
-                                <a href="#" class="botao-plano">Assinar</a>
+                            <div class="card-header card-texto pt-3">
+                                <p class="text-center">Tenha um site com uma apresentação impecável e conquiste novos
+                                    clientes, direcionando e aumentando ainda mais a eficácia de seus anúncios.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center borda-personalizada shadow-light">
-                        <div class="card-body">
-                            <h2 class="nome-plano card-title py-2 separador-planos">Premium</h2>
-                            <div class="my-3">
-                                <span class="rs-planos-light d-flex flex-column mb-3 h5">R$</span>
-                                <span class="valor-plano-light h1">94</span>
-                                <span class="valor-plano-light h4">/mês</span>
+                    <div class="col-md-4 col-12">
+                        <div class="card">
+                            <h5 class="card-title text-center pt-4 px-3 titulo-servico">Gestão de anúncios no Google,
+                                Facebook e Instagram</h5>
+                            <div class="icone-circulo">
+                                <img class="mx-auto pt-4 pb-4" src="./app/src/images/Icon3.png" width="75px">
                             </div>
-                        </div>
-                        <div class="plano-light">
-                            <span class="d-block"><i class="bi bi-check2 icon-check"></i>E-mail suporte</span>
-                            <span class="d-block"><i class="bi bi-check2 icon-check"></i>10 usuários</span>
-                            <span class="d-block"><i class="bi bi-x icon-close"></i>15 projetos integrados</span>
-                            <span class="d-block"><i class="bi bi-x icon-close"></i>Download ilimitado</span>
-                            <span class="d-block mb-5"><i class="bi bi-check2 icon-check"></i>5 Uploads</span>
-                            <a href="#" class="botao-plano">Assinar</a>
+                            <div class="card-header card-texto pt-3">
+                                <p class="text-center">Gerenciamos todos os seus anúncios nas melhores plataformas
+                                    digitais, alcançando exatamente o público certo e atraindo muitos novos clientes em
+                                    potencial.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="logo-section">
-        <div class="separator"></div>
-        <div>
-            <h2 class="text-center py-4">Nossos Clientes</h2>
-            <p class="text-center">Veja algumas das marcas que confiam em nossos serviços.</p>
-        </div>
-        <div class="row clientes pb-5">
-            <div class="col-md-3 col-xs-12 mx-5">
-                <img src="../app/src/images/SingularMotos.png" alt="Logo 1" width="150px">
-            </div>
-            <div class="col-md-3 col-xs-12 mx-5">
-                <img src="../app/src/images/ClaudiaElisa.png" alt="Logo 2" width="180px">
-            </div>
-            <div class="col-md-3 col-xs-12 mx-5">
-                <img src="../app/src/images/CheiasdeCharme.png" alt="Logo 3" width="150px">
-            </div>
-            <div class="col-md-3 col-xs-12 mx-5">
-                <img src="../app/src/images/EsteticaCia.png" alt="Logo 4" width="100px">
-            </div>
-        </div>
-    </section> -->
-    <!-- <section class="depoimentos bkg-depoimentos pt-2">
-        <h2 class="text-center pt-4 pb-2 titulo-depoimentos">Depoimentos</h2>
-        <p class="text-center pb-4 subtitulo-depoimentos">Veja o que nossos clientes têm a dizer sobre nós.</p>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center py-4 bkg-card-depoimentos">
-                        <div class="card-body">
-                            <div>
-                                <div>
-                                    <img src="../app/src/images/menina-depoimento.png" width="130px" alt="Foto 1"
-                                        class="border-depoimento">
+    <!-- Fim Card Serviços -->
+
+    <!-- Inicio Card Planos -->
+    <section id="planos">
+        <div class="bkg-planos">
+            <h2 class="text-center pt-5 text-white">Planos</h2>
+            <p class="text-center pb-5 mb-4 pt-2 fs-5">Escolha o plano que melhor se adapta às suas necessidades.</p>
+            <div class="container pb-5">
+                <div class="row mx-auto g-4">
+                    <div class="col-md-4 col-12">
+                        <div class="card card-basico-premium card-dark">
+                            <div class="card-header">
+                                <h3 class="text-center text-white separador-basico-premium mt-4 mb-5 pb-3 mx-4">Básico
+                                </h3>
+                                <div class="my-3 text-center text-white">
+                                    <span class="real d-flex flex-column h5">R$</span>
+                                    <span class="h1">28</span>
+                                    <span class="h4">/mês</span>
                                 </div>
-                                <h2 class="text-center nick-depoimentos my-4">Anne Shirley</h2>
-                                <span class="d-block texto-depoimentos">Descrição do depoimento </span>
-                                <span class="d-block texto-depoimentos">da pessoa 1, compartilhando</span>
-                                <span class="d-block texto-depoimentos">sua experiência</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center py-4 bkg-card-depoimentos">
-                        <div class="card-body">
-                            <div>
-                                <img src="../app/src/images/menina-depoimento.png" width="130px" alt="Foto 1"
-                                    class="border-depoimento" s>
-                                <h2 class="text-center nick-depoimentos my-4">Liam Anderson</h2>
-                                <span class="d-block texto-depoimentos">Descrição do depoimento </span>
-                                <span class="d-block texto-depoimentos">da pessoa 1, compartilhando</span>
-                                <span class="d-block texto-depoimentos">sua experiência</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center py-4 bkg-card-depoimentos">
-                        <div class="card-body">
-                            <div>
-                                <img src="../app/src/images/menina-depoimento.png" width="130px" alt="Foto 1"
-                                    class="border-depoimento">
-                                <h2 class="text-center nick-depoimentos my-4">Sophie Mitchell</h2>
-                                <span class="d-block texto-depoimentos">Descrição do depoimento </span>
-                                <span class="d-block texto-depoimentos">da pessoa 1, compartilhando</span>
-                                <span class="d-block texto-depoimentos">sua experiência</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section class="contato bkg-contato">
-        <h2 class="text-center titulo-contato pt-5 pb-3">Entre em Contato</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <div>
-                                <div class="text-start m-4">
-                                    <img src="../app/src/images/mulher-contato.png" width="px" alt="mulher-contato"
-                                        class="">
-                                </div>
-                                <h3 class="text-start titulo-informacoes m-3 my-4">Ligue para gente</h3>
-                                <span class="d-block text-start descricao-informacoes m-3">Tem alguma sugestão, dúvida
-                                    ou</span>
-                                <span class="d-block text-start descricao-informacoes m-3 pb-4">solitação? Escreva para
-                                    nós.</span>
-                                <div class="icon-telefone-contato m-4">
-                                    <img src="../app/src/images/telefone.png" width="px" alt="telefone-contato">
-                                </div>
-                                <span
-                                    class="d-block text-start descricao-telefone-email espaco-letras mx-5">TELEFONE</span>
-                                <span class="d-block text-start titulo-informacoes mx-5">+55 12 9999-9999</span>
-                                <div class="text-start icon-email-contato m-4">
-                                    <img src="../app/src/images/email.png" width="px" alt="email-contato">
-                                </div>
-                                <span
-                                    class="d-block text-start descricao-telefone-email espaco-letras mx-5">E-MAIL</span>
-                                <span
-                                    class="d-block text-start titulo-informacoes mx-5 pb-2">contato@startdigital.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <form class="contato-form" id="formContato">
-                        <div class="form-group-input field mb-3">
-                            <input type="input" class="form-field-input" placeholder="Nome" name="nome" id='name' />
-                            <label for="name" class="form-label-input">Nome</label>
-                        </div>
-                        <div class="form-group-input field mb-3">
-                            <input type="input" class="email form-field-input" placeholder="Email" name="email"
-                                id='email' />
-                            <label for="email" class="form-label-input">Email</label>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group-input field mb-3 d-flex">
-                                    <div class="me-3 flex-fill d-flex">
-                                        <input type="input" class="phone form-field-input" placeholder="Telefone"
-                                            name="telefone" id='telefone' maxlength="15" />
-                                        <label for="telefone" class="form-label-input">Telefone</label>
+                                <div class="text-center">
+                                    <div class="text-center text-white">
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
+                                            <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
+                                            <li><i class="bi bi-x icon-close"></i> 15 projetos integrados</li>
+                                            <li><i class="bi bi-x icon-close"></i> Download ilimitado</li>
+                                            <li class="mb-5"><i class="bi bi-check2 icon-check"></i> 5 Uploads</li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group-input field mb-3 d-flex">
-                                    <div class="me-3 flex-fill d-flex">
-                                        <input type="input" class="phone form-field-input" placeholder="Celular"
-                                            name="celular" id='celular' />
-                                        <label for="celular" class="form-label-input">Celular</label>
-                                    </div>
+                                <div class="text-center">
+                                    <button class="botao-planos text-white mb-4">Assinar</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group-input field mb-4">
-                            <div class="mb-3">
-                                <label for="faturamento" class="form-label-input">Faturamento Mensal</label>
+                    </div>
+                    <div class="col-md-4 col-12 destaque">
+                        <div class="card card-padrao">
+                            <div class="card-header">
+                                <h3 class="text-center titulo-sessoes separador-padrao mt-4 mb-5 pb-3 mx-4">Padrão</h3>
+                                <div class="my-3 text-center color-planos">
+                                    <span class="real d-flex flex-column h5">R$</span>
+                                    <span class="h1">57</span>
+                                    <span class="h4">/mês</span>
+                                </div>
+                                <div class="text-center texto-planos-padrao">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
+                                        <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
+                                        <li><i class="bi bi-x icon-close"></i> 15 projetos integrados</li>
+                                        <li><i class="bi bi-x icon-close"></i> Download ilimitado</li>
+                                        <li class="mb-5"><i class="bi bi-check2 icon-check"></i> 5 Uploads</li>
+                                    </ul>
+                                </div>
+                                <div class="text-center">
+                                    <button class="botao-planos text-white mb-4">Assinar</button>
+                                </div>
                             </div>
-                            <select id="faturamento" class="form-select" name="faturamento">
-                                <option value="disabled select hidden">Selecione um valor</option>
-                                <option value="0-500">R$ 0 - R$ 500</option>
-                                <option value="500-1000">R$ 500 - R$ 1.000</option>
-                                <option value="1000-5000">R$ 1.000 - R$ 5.000</option>
-                                <option value="acima-5000">Acima de R$ 5.000</option>
-                            </select>
                         </div>
-                        <button type="submit" class="bt-contato" id="formulario">Enviar Mensagem</button>
-                    </form>
-                    <div class="col-md-1"></div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card card-basico-premium">
+                            <div class="card-header">
+                                <h3 class="text-center text-white separador-basico-premium mt-4 mb-5 pb-3 mx-4">Premium
+                                </h3>
+                                <div class="my-3 text-center text-white">
+                                    <span class="real d-flex flex-column h5">R$</span>
+                                    <span class="h1">89</span>
+                                    <span class="h4">/mês</span>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-center text-white">
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-check2 icon-check"></i> E-mail suporte</li>
+                                            <li><i class="bi bi-check2 icon-check"></i> 10 usuários</li>
+                                            <li><i class="bi bi-x icon-close"></i> 15 projetos integrados</li>
+                                            <li><i class="bi bi-x icon-close"></i> Download ilimitado</li>
+                                            <li class="mb-5"><i class="bi bi-check2 icon-check"></i> 5 Uploads</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="botao-planos text-white mb-4">Assinar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </section> -->
-    <footer class="bkg-rodape">
-        <div class="text-center pt-4">
-            <img src="../app/src/images/logo-start.png" width="150px">
         </div>
-        <div class="text-center rodape pt-1 pb-3">
-            Todos os direitos reservados.
+    </section>
+    <!-- Fim Card Planos -->
+
+    <!-- Inicio Entre em Contato -->
+    <section id="contato">
+        <div class="fale-conosco text-center">
+            <h2>Tem uma ideia incrível e precisa de ajuda com seu projeto?</h2>
+            <p class="texto-contato pb-3">Vamos conversar! Clique no botão abaixo e fale com a gente pelo whatsapp.</p>
+            <a href="https://wa.me/12981854964" target="_blank" class="btn-whatsapp">💬 Chamar no WhatsApp</a>
+        </div>
+    </section>
+    <!-- Fim Entre em Contato -->
+
+    <footer>
+        <div class="bkg-rodape">
+            <div class="text-center pt-4 pb-2">
+                <img src="../app/src/images/logo-start_lg.png" width="160px">
+            </div>
+            <div class="text-center pb-3">
+                <span class="rodape">Todos os direitos reservados</span>
+            </div>
         </div>
     </footer>
+
     <div class="whatsapp">
-        <a href="https://wa.me/5512981854964?text=Olá%2C%20vim%20do%20site%20Start%20Up%20Digital%20e%20gostaria%20de%20fazer%20um%20orçamento%20para%20desenvolver%20meu%20site.%20Podemos%20conversar%3F" target="_blank">
+        <a href="https://wa.me/5512981854964?text=Olá%2C%20vim%20do%20site%20Start%20Up%20Digital%20e%20gostaria%20de%20fazer%20um%20orçamento%20para%20desenvolver%20meu%20site.%20Podemos%20conversar%3F"
+            target="_blank">
             <img src="../app/src/images/whatsapp-removebg-preview.png" width="80" alt="Fale conosco pelo whatsapp"
                 title="Fale conosco pelo whatsapp" />
         </a>
@@ -345,32 +242,8 @@
 
 </body>
 
-<!-- Optional JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-<!-- Importação de arquivo JavaScript -->
-<script src="../app/src/js/index.js"></script>
-<script src="../app/src/js/Notify.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-
-<!-- /* 
-Campos dos formulários para enviar para o Banco de Dados
-
-Campos: Nome, E-mail, Telefone, Celular, Faturamento Mensal.
-
-1- Chamar função salvarFormulario que vai pegar os dados digitados e formar um objeto no seguinte formato
-    {nome: "", email: "", telefone: "", celular: "", faturamentoMensal: ""}
-
-2- A função salvarFormulario deve chamar a função validarCampos que fará a validação dos campos digitados pelo usuário, verificando se não estão preenchidos, se
-eles estiverem preenchidos, então deve ser dado alert("Dados salvos com sucesso!") OBS.: Estudar requisições ajax com js
-
-*/ -->
 
 </html>
