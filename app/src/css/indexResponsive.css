@@ -202,6 +202,12 @@ p {
     color: var(--cor-azul-escuro);
 }
 
+.font-planos {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
 /* Ajuste do valor (R$) */
 .real {
     position: absolute;
